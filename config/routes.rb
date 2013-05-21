@@ -1,14 +1,8 @@
 Compraravistaouaprazo::Application.routes.draw do
 
   resources :quantidade_de_meses
-
-
   resources :taxa_de_juros
-
-
   resources :valor_financiamentos
-
-
   resources :valor_prestacos
 
   get "home/index"
