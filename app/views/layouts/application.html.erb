@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Compraravistaouaprazo</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+		<title>Compraravistaouaprazo</title>
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
 
-<%= yield %>
+		<header>
+			<h3>Comprar a vista ou a prazo ?</h3>
+		</header>
 
-</body>
+		<nav>
+			<ul>
+				<li>
+					<%= link_to "Calcular prestação",  new_valor_prestaco_path %>
+				</li>
+				<li>
+					<%= link_to "Calcular valor do financiamento",  new_valor_financiamento_path %>
+				</li>
+				<li>
+					<%= link_to "Calcular percentual da taxa de juros",  new_taxa_de_juro_path %>
+				</li>
+				<li>
+					<%= link_to "Calcular quantidade de meses",  new_quantidade_de_mese_path %>
+				</li>
+			</ul>
+		</nav>
+
+		<section id="informe">
+			<%= render 'home/informativo.html.erb'%>
+		</section>
+
+		<section>
+			<%= yield %>
+		</section>
+
+		<footer>
+			<p>
+				&copy; Copyright  by Antônio Gusmão
+			</p>
+		</footer>
+
+	</body>
 </html>

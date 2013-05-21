@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  numeromeses: 1
+  taxajuros: 9.99
+  valorfinanciado: 9.99
+
+two:
+  numeromeses: 1
+  taxajuros: 9.99
+  valorfinanciado: 9.99

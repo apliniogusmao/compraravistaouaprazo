@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  valordofinanciamento: 9.99
+  valordaparcela: 9.99
+  quantidademeses: 1
+
+two:
+  valordofinanciamento: 9.99
+  valordaparcela: 9.99
+  quantidademeses: 1

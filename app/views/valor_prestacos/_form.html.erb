@@ -1,0 +1,36 @@
+<%= form_for(@valor_prestaco) do |f| %>
+<% if @valor_prestaco.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@valor_prestaco.errors.count, "error") %> prohibited this valor_prestaco from being saved:</h2>
+	<ul>
+		<% @valor_prestaco.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
+
+<div class="field">
+	<%= f.label :numeromeses %>
+	<br />
+	<%= f.number_field :numeromeses %>
+</div>
+
+<div class="field">
+	<%= f.label :taxajuros %>
+	<br />
+	<%= f.text_field :taxajuros %>
+</div>
+
+<div class="field">
+	<%= f.label :valorfinanciado %>
+	<br />
+	<%= f.text_field :valorfinanciado %>
+</div>
+
+<div class="actions">
+	<%= f.submit "Calcular"  %>
+</div>
+<% end %>

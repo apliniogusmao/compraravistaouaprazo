@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  numeromeses: 1
+  taxadejuros: 
+  valordasparcelas: 
+
+two:
+  numeromeses: 1
+  taxadejuros: 
+  valordasparcelas: 
