@@ -13,21 +13,21 @@
 <% end %>
 
 <div class="field">
-	<%= f.label :numeromeses %>
+	<%= f.label :numeromeses  %>
 	<br />
-	<%= f.number_field :numeromeses %>
+	<%= f.number_field :numeromeses, :required => true %>
 </div>
 
 <div class="field">
 	<%= f.label :taxajuros %>
 	<br />
-	<%= f.text_field :taxajuros %>
+	<%= f.text_field :taxajuros, :required => true  %>
 </div>
 
 <div class="field">
 	<%= f.label :valorfinanciado %>
 	<br />
-	<%= f.text_field :valorfinanciado %>
+	<%= f.text_field :valorfinanciado, :required => true  %>
 </div>
 
 <div class="actions">

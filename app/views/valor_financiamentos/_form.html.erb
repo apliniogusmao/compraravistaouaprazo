@@ -1,29 +1,34 @@
 <%= form_for(@valor_financiamento) do |f| %>
-  <% if @valor_financiamento.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@valor_financiamento.errors.count, "error") %> prohibited this valor_financiamento from being saved:</h2>
+<% if @valor_financiamento.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@valor_financiamento.errors.count, "error") %> prohibited this valor_financiamento from being saved:</h2>
 
-      <ul>
-      <% @valor_financiamento.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+	<ul>
+		<% @valor_financiamento.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
 
-  <div class="field">
-    <%= f.label :numeromeses %><br />
-    <%= f.number_field :numeromeses %>
-  </div>
-  <div class="field">
-    <%= f.label :taxadejuros %><br />
-    <%= f.text_field :taxadejuros %>
-  </div>
-  <div class="field">
-    <%= f.label :valordasparcelas %><br />
-    <%= f.text_field :valordasparcelas %>
-  </div>
-  <div class="actions">
-    <%= f.submit  "Calcular"%>
-  </div>
+<div class="field">
+	<%= f.label :numeromeses %>
+	<br />
+	<%= f.number_field :numeromeses, :required => true  %>
+</div>
+<div class="field">
+	<%= f.label :taxadejuros %>
+	<br />
+	<%= f.text_field :taxadejuros, :required => true  %>
+</div>
+<div class="field">
+	<%= f.label :valordasparcelas %>
+	<br />
+	<%= f.text_field :valordasparcelas, :required => true  %>
+</div>
+<div class="actions">
+	<%= f.submit  "Calcular"%>
+</div>
 <% end %>

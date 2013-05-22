@@ -1,29 +1,34 @@
 <%= form_for(@quantidade_de_mese) do |f| %>
-  <% if @quantidade_de_mese.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@quantidade_de_mese.errors.count, "error") %> prohibited this quantidade_de_mese from being saved:</h2>
+<% if @quantidade_de_mese.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@quantidade_de_mese.errors.count, "error") %> prohibited this quantidade_de_mese from being saved:</h2>
 
-      <ul>
-      <% @quantidade_de_mese.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+	<ul>
+		<% @quantidade_de_mese.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
 
-  <div class="field">
-    <%= f.label :jurosmensal %><br />
-    <%= f.text_field :jurosmensal %>
-  </div>
-  <div class="field">
-    <%= f.label :valorprestacao %><br />
-    <%= f.text_field :valorprestacao %>
-  </div>
-  <div class="field">
-    <%= f.label :valorfinanciado %><br />
-    <%= f.text_field :valorfinanciado %>
-  </div>
-  <div class="actions">
-    <%= f.submit  "Calcular"%>
-  </div>
+<div class="field">
+	<%= f.label :jurosmensal %>
+	<br />
+	<%= f.text_field :jurosmensal, :required => true  %>
+</div>
+<div class="field">
+	<%= f.label :valorprestacao %>
+	<br />
+	<%= f.text_field :valorprestacao, :required => true  %>
+</div>
+<div class="field">
+	<%= f.label :valorfinanciado %>
+	<br />
+	<%= f.text_field :valorfinanciado, :required => true  %>
+</div>
+<div class="actions">
+	<%= f.submit  "Calcular"%>
+</div>
 <% end %>
