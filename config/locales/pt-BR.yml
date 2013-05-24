@@ -1,0 +1,37 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+pt-BR:
+ valor_prestaco:
+            new:
+              titulo: 'Valor da prestação'
+              numeromeses: Meses
+              taxajuros: Taxa de Juros
+              valorfinanciado: Valor Financiado
+              valordaprestacao: Valor da Prestação                  
+                
+ valor_financiamento:
+                 new:
+                   titulo: 'Calcular valor do financiamento'    
+                   numeromeses: Meses   
+                   taxajuros: Taxa de Juros
+                   valorfinanciado: Valor Financiado
+                   valordaprestacao: Valor da Prestação                           
+ taxa_de_juro:
+          new:
+            titulo: Calcular percentual da taxa de juros
+            valordofinanciamento: Valor Financiado
+            valordaparcela: Valor da Parcela
+            quantidademeses: Meses
+            
+ quantidade_de_mese:
+                new:
+                  titulo: Calcular quantidade de meses
+                  jurosmensal: Taxa de Juros
+                  valorprestacao: Valor da Prestação
+                  valorfinanciado: Valor Financiado
+                                        
+ layout:
+   prestacao: Calcular prestação
+   finaciamento: Calcular valor do financiamento
+   percentual: Calcular percentual da taxa de juros
+   meses: Calcular quantidade de meses

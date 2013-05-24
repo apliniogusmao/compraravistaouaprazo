@@ -9,36 +9,43 @@
 	<body>
 
 		<div class="container">
-			<header>
-				<h3>Comprar a vista ou a prazo ?</h3>
+			<header class="header">
+				<h3><%= link_to "Comprar a vista ou a prazo ?", root_path %></h3>
 			</header>
-
-			<nav>
-				<ul class="nav nav-pills">
-					<li class="active">
-						<%= link_to "Calcular prestação",  new_valor_prestaco_path %>
-					</li>
-					<li>
-						<%= link_to "Calcular valor do financiamento",  new_valor_financiamento_path %>
-					</li>
-					<li>
-						<%= link_to "Calcular percentual da taxa de juros",  new_taxa_de_juro_path %>
-					</li>
-					<li>
-						<%= link_to "Calcular quantidade de meses",  new_quantidade_de_mese_path %>
-					</li>
-				</ul>
-			</nav>
-
+		</div>
+		<div class="navbar-inner">
+			<div class="container">
+				<nav>
+					<ul class="nav nav-pills">
+						<li class="active">
+							<%= link_to t("layout.prestacao"),  new_valor_prestaco_path %>
+						</li>
+						<li>
+							<%= link_to t("layout.finaciamento"),  new_valor_financiamento_path %>
+						</li>
+						<li>
+							<%= link_to t("layout.percentual"),  new_taxa_de_juro_path %>
+						</li>
+						<li>
+							<%= link_to t("layout.meses"),  new_quantidade_de_mese_path %>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="container">
 			<section>
 				<%= yield %>
 			</section>
-			<footer>
+		</div>
+		<footer class="footer">
+			<div class="container">
 				<p>
 					&copy; Copyright  by Antônio Gusmão
+					<%= render 'layouts/facebook'%>
 				</p>
-			</footer>
-		</div>
+			</div>
+		</footer>
 
 	</body>
 </html>

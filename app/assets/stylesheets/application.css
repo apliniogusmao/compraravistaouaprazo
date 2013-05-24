@@ -15,6 +15,10 @@
  =FOOTER
  ------------------------------*/
 /* Tell the browser to render HTML 5 elements as block */
-header, footer, section, aside, nav, article {
-	display: block;
+.footer {
+	text-align: center;
+	padding: 30px 0;
+	margin-top: 70px;
+	border-top: 1px solid #E5E5E5;
+	background-color: #F5F5F5;
 }
