@@ -1,36 +1,35 @@
-<%= form_for(@valor_prestaco) do |f| %>
-<% if @valor_prestaco.errors.any? %>
-<div id="error_explanation">
-	<h2><%= pluralize(@valor_prestaco.errors.count, "error") %> prohibited this valor_prestaco from being saved:</h2>
-	<ul>
-		<% @valor_prestaco.errors.full_messages.each do |msg| %>
-		<li>
-			<%= msg %>
-		</li>
-		<% end %>
-	</ul>
-</div>
-<% end %>
-
-<div class="field">
-	<%= f.label :numeromeses  %>
-	<br />
-	<%= f.number_field :numeromeses, :required => true %>
+<%= form_for(@valor_prestaco, :html => {  :class => 'form-horizontal'}) do |f|  %>
+<div class="control-group">
+	<%= f.label :numeromeses,  :class => 'control-label' %>
+	<div class="controls">
+		<%= f.text_field :numeromeses, :required => true %>
+	</div>
 </div>
 
-<div class="field">
-	<%= f.label :taxajuros %>
-	<br />
-	<%= f.text_field :taxajuros, :required => true  %>
+<div class="control-group">
+	<%= f.label :taxajuros, :class => 'control-label'%>
+	<div class="controls">
+		<%= f.text_field :taxajuros, :required => true  %>
+	</div>
 </div>
 
-<div class="field">
-	<%= f.label :valorfinanciado %>
-	<br />
-	<%= f.text_field :valorfinanciado, :required => true  %>
+<div class="control-group">
+	<%= f.label :valorfinanciado, :class => 'control-label'%>
+	<div class="controls">
+		<%= f.text_field :valorfinanciado, :required => true  %>
+	</div>
 </div>
 
-<div class="actions">
-	<%= f.submit "Calcular"  %>
+<div class="control-group">
+	<%= f.label :valordaprestacao, :class => 'control-label'%>
+	<div class="controls">
+		<%= f.text_field :valordaprestacao, :required => true  %>
+	</div>
+</div>
+
+<div class="control-group">
+	<div class="controls">
+		<%= f.submit "Calcular", :class=> 'btn btn-primary btn-large' %>
+	</div>
 </div>
 <% end %>

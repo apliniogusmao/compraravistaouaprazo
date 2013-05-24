@@ -4,6 +4,7 @@ class CreateValorPrestacos < ActiveRecord::Migration
       t.integer  :numeromeses
       t.decimal  :taxajuros
       t.decimal  :valorfinanciado
+      t.decimal  :valordaprestacao
 
       t.timestamps
     end
