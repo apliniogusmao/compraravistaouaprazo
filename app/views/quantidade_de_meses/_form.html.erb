@@ -1,18 +1,18 @@
 <%= form_for(@quantidade_de_mese, :html => {  :class => 'form-horizontal'}) do |f| %>
 <div class="control-group">
-	<%= f.label :jurosmensal, :class => 'control-label' %>
+	<%= f.label t('quantidade_de_mese.new.jurosmensal'), :class => 'control-label' %>
 	<div class="controls">
 		<%= f.number_field :jurosmensal, :required => true  %>
 	</div>
 </div>
 <div class="control-group">
-	<%= f.label :valorprestacao, :class => 'control-label' %>
+	<%= f.label t('quantidade_de_mese.new.valorprestacao'), :class => 'control-label' %>
 	<div class="controls">
 		<%= f.number_field :valorprestacao, :required => true  %>
 	</div>
 </div>
 <div class="control-group">
-	<%= f.label :valorfinanciado, :class => 'control-label' %>
+	<%= f.label t('quantidade_de_mese.new.valorfinanciado'), :class => 'control-label' %>
 	<div class="controls">
 		<%= f.number_field :valorfinanciado, :required => true  %>
 	</div>

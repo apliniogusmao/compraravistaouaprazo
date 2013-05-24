@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Compraravistaouaprazo</title>
+		<title><%= t("layout.cabecalho") %></title>
 		<%= stylesheet_link_tag    "application", :media => "all" %>
 		<%= javascript_include_tag "application" %>
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
-
 		<div class="container">
 			<header class="header">
-				<h3><%= link_to "Comprar a vista ou a prazo ?", root_path %></h3>
+				<h3><%= link_to t('layout.cabecalho'), root_path %></h3>
 			</header>
 		</div>
 		<div class="navbar-inner">
@@ -46,6 +45,5 @@
 				</p>
 			</div>
 		</footer>
-
 	</body>
 </html>

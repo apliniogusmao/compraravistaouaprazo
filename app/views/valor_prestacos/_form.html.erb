@@ -1,27 +1,27 @@
 <%= form_for(@valor_prestaco, :html => {  :class => 'form-horizontal'}) do |f|  %>
 <div class="control-group">
-	<%= f.label :numeromeses,  :class => 'control-label' %>
+	<%= f.label t('valor_prestaco.new.numeromeses'),  :class => 'control-label' %>
 	<div class="controls">
 		<%= f.number_field :numeromeses, :required => true %>
 	</div>
 </div>
 
 <div class="control-group">
-	<%= f.label :taxajuros, :class => 'control-label'%>
+	<%= f.label t('valor_prestaco.new.taxajuros'), :class => 'control-label'%>
 	<div class="controls">
-		<%= f.number_field :taxajuros, :required => true  %>
+		<%= f.number_field :taxajuros, :required => true, :step => '0.000001', :min => '0', :max => '999' %>
 	</div>
 </div>
 
 <div class="control-group">
-	<%= f.label :valorfinanciado, :class => 'control-label'%>
+	<%= f.label t('valor_prestaco.new.valorfinanciado'), :class => 'control-label'%>
 	<div class="controls">
 		<%= f.number_field :valorfinanciado, :required => true  %>
 	</div>
 </div>
 
 <div class="control-group">
-	<%= f.label :valordaprestacao, :class => 'control-label'%>
+	<%= f.label t('valor_prestaco.new.valordaprestacao'), :class => 'control-label'%>
 	<div class="controls">
 		<%= f.number_field :valordaprestacao, :required => true  %>
 	</div>

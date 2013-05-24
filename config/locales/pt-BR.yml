@@ -14,8 +14,8 @@ pt-BR:
                    titulo: 'Calcular valor do financiamento'    
                    numeromeses: Meses   
                    taxajuros: Taxa de Juros
-                   valorfinanciado: Valor Financiado
-                   valordaprestacao: Valor da Prestação                           
+                   valordasparcelas: Valor das Parcelas
+
  taxa_de_juro:
           new:
             titulo: Calcular percentual da taxa de juros
@@ -35,3 +35,4 @@ pt-BR:
    finaciamento: Calcular valor do financiamento
    percentual: Calcular percentual da taxa de juros
    meses: Calcular quantidade de meses
+   cabecalho: Comprar a vista ou a prazo ?

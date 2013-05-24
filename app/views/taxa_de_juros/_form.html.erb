@@ -1,18 +1,18 @@
 <%= form_for(@taxa_de_juro, :html => {  :class => 'form-horizontal'}) do |f| %>
 <div class="control-group">
-	<%= f.label :valordofinanciamento, :class => 'control-label' %>
+	<%= f.label  t('taxa_de_juro.new.valordofinanciamento'), :class => 'control-label' %>
 	<div class="controls">
 		<%= f.number_field :valordofinanciamento, :required => true  %>
 	</div>
 </div>
 <div class="control-group">
-	<%= f.label :valordaparcela, :class => 'control-label' %>
+	<%= f.label  t('taxa_de_juro.new.valordaparcela'), :class => 'control-label' %>
 	<div class="controls">
 		<%= f.number_field :valordaparcela, :required => true  %>
 	</div>
 </div>
 <div class="control-group">
-	<%= f.label :quantidademeses, :class => 'control-label' %>
+	<%= f.label t('taxa_de_juro.new.quantidademeses'), :class => 'control-label' %>
 	<div class="controls">
 		<%= f.number_field :quantidademeses, :required => true  %>
 	</div>
