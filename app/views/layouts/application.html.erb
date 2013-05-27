@@ -5,16 +5,17 @@
 		<%= stylesheet_link_tag    "application", :media => "all" %>
 		<%= javascript_include_tag "application" %>
 		<%= csrf_meta_tags %>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<div class="container">
-			<header class="header">
-				<h3><%= link_to t('layout.cabecalho'), root_path %></h3>
-			</header>
-		</div>
-		<div class="navbar-inner">
+		<header class="header">
 			<div class="container">
-				<nav>
+				<h3><%= link_to t('layout.cabecalho'), root_path %></h3>
+			</div>
+		</header>
+		<nav>
+			<div class="navbar-inner">
+				<div class="container">
 					<ul class="nav nav-pills">
 						<li class="active">
 							<%= link_to t("layout.prestacao"),  new_valor_prestaco_path %>
@@ -29,14 +30,15 @@
 							<%= link_to t("layout.meses"),  new_quantidade_de_mese_path %>
 						</li>
 					</ul>
-				</nav>
+				</div>
 			</div>
-		</div>
-		<div class="container">
-			<section>
+		</nav>
+		<section>
+			<div class="container">
 				<%= yield %>
-			</section>
-		</div>
+			</div>
+		</section>
+
 		<footer class="footer">
 			<div class="container">
 				<p>

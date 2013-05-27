@@ -36,3 +36,11 @@ pt-BR:
    percentual: Calcular percentual da taxa de juros
    meses: Calcular quantidade de meses
    cabecalho: Comprar a vista ou a prazo ?
+
+ mensagem:
+   taxadejuros: Formato deve ser
+   valorfinanciado: O Valor financiado é
+   numeromeses: Número de meses
+   valorparcelas: Valor das parcelas
+   valordofinanciamento: Valor do financiamento
+   valorprestacao: Valor da prestação

@@ -2,24 +2,25 @@
 <div class="control-group">
 	<%= f.label  t('taxa_de_juro.new.valordofinanciamento'), :class => 'control-label' %>
 	<div class="controls">
-		<%= f.number_field :valordofinanciamento, :required => true  %>
+		<%= f.number_field :valordofinanciamento, :class => 'formato_moeda', :required => true, :step => '1', :min => '1', :max => '9999999', :title => t('mensagem.valordofinanciamento')   %>
 	</div>
 </div>
 <div class="control-group">
 	<%= f.label  t('taxa_de_juro.new.valordaparcela'), :class => 'control-label' %>
 	<div class="controls">
-		<%= f.number_field :valordaparcela, :required => true  %>
+		<%= f.number_field :valordaparcela, :class => 'formato_moeda', :required => true, :step => '1', :min => '1', :max => '9999999', :title => t('mensagem.valorparcelas')   %>
 	</div>
 </div>
 <div class="control-group">
 	<%= f.label t('taxa_de_juro.new.quantidademeses'), :class => 'control-label' %>
 	<div class="controls">
-		<%= f.number_field :quantidademeses, :required => true  %>
+		<%= f.number_field :quantidademeses, :required => true,  :step => '10', :min => '1', :max => '9999999', :title => t('mensagem.numeromeses')  %>
 	</div>
 </div>
 <div class="control-group">
 	<div class="controls">
-		<%= f.submit  "Calcular"%>
+		<%= f.submit  "Calcular", :class=> 'btn btn-primary btn-large' %>
+		<%= f.submit "Limpar", :type => "reset", :class=> 'btn btn-info btn-small'  %>
 	</div>
 </div>
 <% end %>

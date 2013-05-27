@@ -13,3 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function() {
+	$(".formato_moeda").maskMoney({
+		symbol : 'R$ ',
+		thousands : '.',
+		decimal : ',',
+		symbolStay : true
+	});
+});

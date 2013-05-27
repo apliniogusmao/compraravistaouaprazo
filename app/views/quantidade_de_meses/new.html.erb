@@ -2,4 +2,11 @@
 	<h1><%= t 'quantidade_de_mese.new.titulo' %></h1>
 </div>
 
-<%= render 'form' %>
+<div class="row-fluid">
+	<div class="span6">
+		<%= render 'form' %>
+	</div>
+	<div class="span6">
+		O Resultado é <%= @valor_presente %>
+	</div>
+</div>

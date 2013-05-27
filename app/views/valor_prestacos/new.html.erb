@@ -2,6 +2,11 @@
 	<h1><%= t 'valor_prestaco.new.titulo' %></h1>
 </div>
 
-<%= render 'form' %>
-
-<%= @valor_presente %>
+<div class="row-fluid">
+	<div class="span6">
+		<%= render 'form' %>
+	</div>
+	<div class="span6">
+		O Resultado é <%= @valor_presente %>
+	</div>
+</div>
