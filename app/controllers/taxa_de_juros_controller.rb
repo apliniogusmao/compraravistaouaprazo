@@ -16,15 +16,12 @@ class TaxaDeJurosController < ApplicationController
   def create
     @taxa_de_juro = TaxaDeJuro.new(params[:taxa_de_juro])
 
+    @valor_juros =  @taxa_de_juro.calcular_taxa_juros  
+      
     respond_to do |format|
-      if @taxa_de_juro.save
-        format.html { redirect_to @taxa_de_juro, notice: 'Taxa de juro was successfully created.' }
-        format.json { render json: @taxa_de_juro, status: :created, location: @taxa_de_juro }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @taxa_de_juro.errors, status: :unprocessable_entity }
-      end
-    end
+          format.html { render action: "new" }
+          format.json { render json: @taxa_de_juro, status: :created, location: @taxa_de_juro }
+     end 
   end
 
 end

@@ -1,3 +1,4 @@
+<% provide(:title, t('valor_financiamento.new.titulo')) %>
 <div class="page-header">
 	<h1><%= t 'valor_financiamento.new.titulo' %></h1>
 </div>
@@ -7,6 +8,6 @@
 		<%= render 'form' %>
 	</div>
 	<div class="span6">
-		O Resultado é <%= @valor_presente %>
+		O Resultado é <%= number_to_currency(@valor_financiar, :format => "%u %n", :separator => ",", :delimiter => ".", :unit => "R$") %>
 	</div>
 </div>

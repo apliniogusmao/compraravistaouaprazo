@@ -16,5 +16,12 @@ class ValorFinanciamentosController < ApplicationController
   def create
     @valor_financiamento = ValorFinanciamento.new(params[:valor_financiamento])
 
+    @valor_financiar =  @valor_financiamento.calcular_financiamento   
+   
+    respond_to do |format|
+      format.html { render action: "new" }
+      format.json { render json: @valor_financiamento, status: :created, location: @valor_financiamento }
+    end   
+      
   end
 end

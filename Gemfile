@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 
+# gem 'brazilian-rails'
 # gem 'money'
 # gem "delocalize"
 

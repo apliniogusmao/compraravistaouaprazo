@@ -40,10 +40,10 @@ ActiveRecord::Schema.define(:version => 20130521142915) do
   create_table "valor_prestacos", :force => true do |t|
     t.integer  "numeromeses"
     t.decimal  "taxajuros"
-    t.decimal  "valorfinanciado"
+    t.decimal  "valorfinanciado",  :precision => 14, :scale => 2
     t.decimal  "valordaprestacao"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",                                                       :null => false
+    t.datetime "updated_at",                                                       :null => false
   end
 
 end

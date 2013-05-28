@@ -16,5 +16,12 @@ class QuantidadeDeMesesController < ApplicationController
   def create
     @quantidade_de_mese = QuantidadeDeMese.new(params[:quantidade_de_mese])
   
+    @quantidade_meses =   @quantidade_de_mese.calcular_qtade_meses
+    
+    respond_to do |format|
+         format.html { render action: "new" }
+         format.json { render json: @quantidade_de_mese, status: :created, location: @quantidade_de_mese }
+       end
+      
   end
 end

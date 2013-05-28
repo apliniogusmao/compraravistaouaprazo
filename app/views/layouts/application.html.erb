@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><%= t("layout.cabecalho") %></title>
+		<title><%= full_title(yield(:title)) %></title>
 		<%= stylesheet_link_tag    "application", :media => "all" %>
 		<%= javascript_include_tag "application" %>
 		<%= csrf_meta_tags %>
@@ -42,7 +42,7 @@
 		<footer class="footer">
 			<div class="container">
 				<p>
-					&copy; Copyright  by Antônio Gusmão
+					<b>&copy; Copyright  by Antônio Gusmão & Giovanna Zauli Bagno</b>
 					<%= render 'layouts/facebook'%>
 				</p>
 			</div>

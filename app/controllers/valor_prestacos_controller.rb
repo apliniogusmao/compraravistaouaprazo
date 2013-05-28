@@ -17,7 +17,7 @@ class ValorPrestacosController < ApplicationController
     
     @valor_prestaco = ValorPrestaco.new(params[:valor_prestaco])
 
-    @valor_presente =  @valor_prestaco.calcular_prestacoes    
+    @valor_prestacao =  @valor_prestaco.calcular_prestacoes
       
     respond_to do |format|
       format.html { render action: "new" }

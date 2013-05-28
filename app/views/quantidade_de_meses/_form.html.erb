@@ -2,19 +2,19 @@
 <div class="control-group">
 	<%= f.label t('quantidade_de_mese.new.jurosmensal'), :class => 'control-label' %>
 	<div class="controls">
-		<%= f.number_field :jurosmensal, :required => true, :pattern => "^\d*(\,\d{2}$)?", :step => '0.01', :min => '0', :max => '99', :title => t('mensagem.taxadejuros')   %>
+		<%= f.number_field :jurosmensal, :required => true, :pattern => "^\d*(\,\d{2}$)?", :step => '1', :min => '0', :max => '99', :title => t('mensagem.taxadejuros')   %>
 	</div>
 </div>
 <div class="control-group">
 	<%= f.label t('quantidade_de_mese.new.valorprestacao'), :class => 'control-label' %>
 	<div class="controls">
-		<%= f.number_field :valorprestacao, :class => 'formato_moeda', :required => true, :required => true, :step => '1', :min => '1', :max => '9999999', :title => t('mensagem.valorprestacao')  %>
+		<%= f.number_field :valorprestacao, :required => true, :required => true, :step => '1', :min => '1', :max => '9999999', :title => t('mensagem.valorprestacao')  %>
 	</div>
 </div>
 <div class="control-group">
 	<%= f.label t('quantidade_de_mese.new.valorfinanciado'), :class => 'control-label' %>
 	<div class="controls">
-		<%= f.number_field :valorfinanciado, :required => true, :required => true, :step => '10', :min => '1', :title => t('mensagem.valordofinanciamento')  %>
+		<%= f.number_field :valorfinanciado, :required => true, :required => true, :step => '1', :min => '1', :title => t('mensagem.valordofinanciamento')  %>
 	</div>
 </div>
 <div class="control-group">

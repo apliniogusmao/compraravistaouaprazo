@@ -1,3 +1,4 @@
+<% provide(:title, t('valor_prestaco.new.titulo')) %>
 <div class="page-header">
 	<h1><%= t 'valor_prestaco.new.titulo' %></h1>
 </div>
@@ -7,6 +8,6 @@
 		<%= render 'form' %>
 	</div>
 	<div class="span6">
-		O Resultado é <%= @valor_presente %>
+		O Resultado é <%= converter_para_moeda( @valor_prestacao ) %>
 	</div>
 </div>
