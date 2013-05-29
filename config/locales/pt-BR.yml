@@ -25,7 +25,7 @@ pt-BR:
             
  quantidade_de_mese:
                 new:
-                  titulo: Calcular quantidade de meses
+                  titulo: Calcular quantidade de prestações
                   jurosmensal: Taxa de Juros
                   valorprestacao: Valor da Prestação
                   valorfinanciado: Valor Financiado
@@ -34,7 +34,7 @@ pt-BR:
    prestacao: Calcular prestação
    finaciamento: Calcular valor do financiamento
    percentual: Calcular percentual da taxa de juros
-   meses: Calcular quantidade de meses
+   meses: Calcular quantidade de prestações
    cabecalho: Comprar a vista ou a prazo ?
 
  mensagem:

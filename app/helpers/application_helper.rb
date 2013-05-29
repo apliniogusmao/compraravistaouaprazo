@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def converter_para_moeda(valor_entrada)
-    number_to_currency(valor_entrada, :separator => ',', :delimiter => '.', :precision => 0, :scale => 0, :format => '%u %n', :unit => 'R$')
+    number_to_currency(valor_entrada, :separator => ',', :delimiter => '.', :precision => 2, :scale => 2, :format => '%u %n', :unit => 'R$')
   end
   
 end

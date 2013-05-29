@@ -14,16 +14,16 @@
 ActiveRecord::Schema.define(:version => 20130521142915) do
 
   create_table "quantidade_de_meses", :force => true do |t|
-    t.decimal  "jurosmensal",     :precision => 10, :scale => 0
-    t.decimal  "valorprestacao",  :precision => 10, :scale => 0
-    t.decimal  "valorfinanciado", :precision => 10, :scale => 0
+    t.decimal  "jurosmensal",     :precision => 10, :scale => 2
+    t.decimal  "valorprestacao",  :precision => 10, :scale => 2
+    t.decimal  "valorfinanciado", :precision => 10, :scale => 2
     t.datetime "created_at",                                     :null => false
     t.datetime "updated_at",                                     :null => false
   end
 
   create_table "taxa_de_juros", :force => true do |t|
-    t.decimal  "valordofinanciamento", :precision => 10, :scale => 0
-    t.decimal  "valordaparcela",       :precision => 10, :scale => 0
+    t.decimal  "valordofinanciamento", :precision => 10, :scale => 2
+    t.decimal  "valordaparcela",       :precision => 10, :scale => 2
     t.integer  "quantidademeses"
     t.datetime "created_at",                                          :null => false
     t.datetime "updated_at",                                          :null => false
@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(:version => 20130521142915) do
 
   create_table "valor_financiamentos", :force => true do |t|
     t.integer  "numeromeses"
-    t.decimal  "taxadejuros",      :precision => 10, :scale => 0
-    t.decimal  "valordasparcelas", :precision => 10, :scale => 0
+    t.decimal  "taxadejuros",      :precision => 10, :scale => 2
+    t.decimal  "valordasparcelas", :precision => 10, :scale => 2
     t.datetime "created_at",                                      :null => false
     t.datetime "updated_at",                                      :null => false
   end
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20130521142915) do
   create_table "valor_prestacos", :force => true do |t|
     t.integer  "numeromeses"
     t.decimal  "taxajuros",        :precision => 10, :scale => 2
-    t.decimal  "valorfinanciado",  :precision => 14, :scale => 2
+    t.decimal  "valorfinanciado",  :precision => 10, :scale => 2
     t.decimal  "valordaprestacao", :precision => 10, :scale => 2
     t.datetime "created_at",                                      :null => false
     t.datetime "updated_at",                                      :null => false

@@ -8,6 +8,6 @@
 		<%= render 'form' %>
 	</div>
 	<div class="span6">
-		O Resultado é <%= number_to_currency(@valor_financiar, :format => "%u %n", :separator => ",", :delimiter => ".", :unit => "R$") %>
+		O Resultado é <%= converter_para_moeda( @valor_financiar ) %>
 	</div>
 </div>
