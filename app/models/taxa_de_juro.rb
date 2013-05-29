@@ -3,7 +3,7 @@ class TaxaDeJuro < ActiveRecord::Base
   
   
   def calcular_taxa_juros
-       valor_juros = (valordofinanciamento * (valordofinanciamento/100*(1+((valordofinanciamento/100)**quantidademeses))))/((1+((valordofinanciamento/100)**quantidademeses)) - 1)
+       valor_juros = valordaparcela / valordofinanciamento
    
      end
   
