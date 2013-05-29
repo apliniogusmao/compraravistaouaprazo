@@ -8,7 +8,7 @@ class ValorPrestaco < ActiveRecord::Base
 =end
   def calcular_prestacoes
         
-    valor_prestacao_retorno = valorfinanciado * ((taxajuros/100)*(1+(taxajuros/100)**numeromeses))/(1+(taxajuros/100)**numeromeses - 1)
+    valor_prestacao_retorno = valorfinanciado * ((taxajuros/100)*((1+(taxajuros/100))**numeromeses))/((1+(taxajuros/100))**numeromeses - 1)
 
   end
 end
