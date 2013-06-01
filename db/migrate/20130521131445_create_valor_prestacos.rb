@@ -3,9 +3,7 @@ class CreateValorPrestacos < ActiveRecord::Migration
     create_table :valor_prestacos do |t|
       t.integer  :numeromeses
       t.decimal  :taxajuros
-      t.decimal  :valorfinanciado
-      t.decimal  :valordaprestacao
-
+      t.string  :valorfinanciado
       t.timestamps
     end
   end

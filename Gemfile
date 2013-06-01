@@ -39,5 +39,5 @@ gem 'jquery-rails'
 
 # To use debugger
 gem 'debugger'
-
-#gem 'ruby-debug-ide'
+gem 'ruby-debug-ide'
+gem 'ruby-debug-base19x'

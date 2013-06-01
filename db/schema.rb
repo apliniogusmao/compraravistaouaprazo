@@ -32,18 +32,17 @@ ActiveRecord::Schema.define(:version => 20130521142915) do
   create_table "valor_financiamentos", :force => true do |t|
     t.integer  "numeromeses"
     t.decimal  "taxadejuros",      :precision => 10, :scale => 2
-    t.decimal  "valordasparcelas", :precision => 10, :scale => 2
-    t.datetime "created_at",                                      :null => false
-    t.datetime "updated_at",                                      :null => false
+    t.string   "valordasparcelas"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "valor_prestacos", :force => true do |t|
     t.integer  "numeromeses"
     t.decimal  "taxajuros",        :precision => 10, :scale => 2
-    t.decimal  "valorfinanciado",  :precision => 10, :scale => 2
-    t.decimal  "valordaprestacao", :precision => 10, :scale => 2
-    t.datetime "created_at",                                      :null => false
-    t.datetime "updated_at",                                      :null => false
+    t.string   "valorfinanciado"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
 end
