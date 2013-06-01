@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title><%= full_title(yield(:title)) %></title>
-		<%= stylesheet_link_tag    "application", :media => "all" %>
-		<%= javascript_include_tag "application" %>
-		<%= csrf_meta_tags %>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<header class="header">
-			<div class="container">
-				<h3><%= link_to t('layout.cabecalho'), root_path %></h3>
-			</div>
-		</header>
-		<nav>
-			<div class="navbar-inner">
-				<div class="container">
-					<ul class="nav nav-pills">
-						<li class="active">
-							<%= link_to t("layout.prestacao"),  new_valor_prestaco_path %>
-						</li>
-						<li>
-							<%= link_to t("layout.finaciamento"),  new_valor_financiamento_path %>
-						</li>
-						<li>
-							<%= link_to t("layout.percentual"),  new_taxa_de_juro_path %>
-						</li>
-						<li>
-							<%= link_to t("layout.meses"),  new_quantidade_de_mese_path %>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<section>
-			<div class="container">
-				<%= yield %>
-			</div>
-		</section>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <h3><%= link_to t('layout.cabecalho'), root_path %></h3>
+  </div>
+</header>
+<nav>
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li class="active">
+          <%= link_to t("layout.prestacao"), new_valor_prestaco_path %>
+        </li>
+        <li>
+          <%= link_to t("layout.finaciamento"), new_valor_financiamento_path %>
+        </li>
+        <li>
+          <%= link_to t("layout.percentual"), new_taxa_de_juro_path %>
+        </li>
+        <li>
+          <%= link_to t("layout.meses"), new_quantidade_de_mese_path %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section>
+  <div class="container">
+    <%= yield %>
+  </div>
+</section>
 
-		<footer class="footer">
-			<div class="container">
-				<p>
-					<b>&copy; Copyright  by Antônio Gusmão & Giovanna Zauli Bagno</b>
-					<%= render 'layouts/facebook'%>
-				</p>
-			</div>
-		</footer>
-	</body>
+<footer class="footer">
+  <div class="container">
+    <p>
+      <b>&copy; Copyright by Antônio Gusmão & Giovanna Zauli Bagno</b>
+      <%= render 'layouts/facebook' %>
+    </p>
+  </div>
+</footer>
+</body>
 </html>
