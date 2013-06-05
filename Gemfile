@@ -25,5 +25,5 @@ gem 'annotate'
 gem 'google-analytics-rails'
 
 # To use debugger
-gem 'ruby-debug-ide'
-gem 'ruby-debug-base19x'
+#gem 'ruby-debug-ide'
+#gem 'ruby-debug-base19x'
