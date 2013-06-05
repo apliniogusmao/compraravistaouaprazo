@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3943347870">
+  <component name="DataSourceManagerImpl" format="xml" hash="2699203353">
     <data-source source="LOCAL" name="Rails compraravistaouaprazo: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="e7e66d00-e50a-43b5-bc84-497fad1247ac">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/compraravistaouaprazo_test</jdbc-url>
