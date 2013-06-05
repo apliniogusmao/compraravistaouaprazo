@@ -20,6 +20,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'annotate'
 
 # gem 'brazilian-rails'
 # gem 'money'
@@ -38,6 +39,6 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
+#gem 'debugger'
 gem 'ruby-debug-ide'
 gem 'ruby-debug-base19x'

@@ -26,21 +26,21 @@ pt-BR:
  quantidade_de_mese:
                 new:
                   titulo: Calcular quantidade de prestações
-                  jurosmensal: Taxa de Juros
-                  valorprestacao: Valor da Prestação
-                  valorfinanciado: Valor Financiado
+                  jurosmensal: Taxa de juros mensal
+                  valorprestacao: Valor das prestações
+                  valorfinanciado: Valor a ser financiado
                                         
  layout:
    prestacao: Calcular prestação
    finaciamento: Calcular valor do financiamento
    percentual: Calcular percentual da taxa de juros
    meses: Calcular quantidade de prestações
-   cabecalho: Comprar a vista ou a prazo ?
+   cabecalho: Comprar a vista ou a prazo?
 
  mensagem:
-   taxadejuros: Formato deve ser
-   valorfinanciado: O Valor financiado é
+   taxadejuros: Taxa de juros
+   valorfinanciado: Valor a ser financiado
    numeromeses: Número de meses
    valorparcelas: Valor das parcelas
    valordofinanciamento: Valor do financiamento
-   valorprestacao: Valor da prestação
+   valorprestacao: Valor das prestações

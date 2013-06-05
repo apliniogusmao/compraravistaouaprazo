@@ -18,10 +18,17 @@ class ValorPrestacosController < ApplicationController
     @valor_prestaco = ValorPrestaco.new(params[:valor_prestaco])
 
     @valor_prestacao = @valor_prestaco.calcular_prestacoes
+    @valor_presente = @valor_prestaco.calcular_valor_presente
+    @porcentagem = @valor_prestaco.calcula_porcentagem
+
+    if @valor_prestacao > @valor_presente
+      @apresentar_mensagem = true
+    else
+      @apresentar_mensagem = false
+    end
 
     respond_to do |format|
       format.html { render action: "new" }
-      format.json { render json: @valor_prestaco, status: :created, location: @valor_prestaco }
     end
   end
 end
