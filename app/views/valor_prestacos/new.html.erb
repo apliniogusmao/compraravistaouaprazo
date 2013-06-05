@@ -1,15 +1,20 @@
 <% provide(:title, t('valor_prestaco.new.titulo')) %>
 <div class="page-header">
-	<h1><%= t 'valor_prestaco.new.titulo' %></h1>
+  <h1><%= t 'valor_prestaco.new.titulo' %></h1>
 </div>
 
 <div class="row-fluid">
-	<div class="span6">
-		<%= render 'form' %>
-	</div>
-	<div class="span6">
-      <% if @apresentar_mensagem %>
-          <p class="notice">Valor a vista menor que <%= converter_para_moeda(@valor_presente) %> vale a pena pagar à vista ou solicitar um desconto de <%= converter_para_moeda( @porcentagem ) %> %</p>
-      <% end %>
-	</div>
+  <div class="span6">
+    <%= render 'form' %>
+  </div>
+  <div class="span6">
+    <% if @apresentar_mensagem %>
+        <p>
+          O Valor da prestação é: <%= converter_para_moeda @valor_prestacao %>
+        </p>
+
+        <p class="notice">Valor a vista menor que <%= converter_para_moeda(@valor_presente) %> vale a pena pagar à vista
+          ou solicitar um desconto de <%= converter_para_moeda(@porcentagem) %> %</p>
+    <% end %>
+  </div>
 </div>

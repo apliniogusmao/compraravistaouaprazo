@@ -11,8 +11,6 @@ class ValorPrestacosController < ApplicationController
     end
   end
 
-  # POST /valor_prestacos
-  # POST /valor_prestacos.json
   def create
 
     @valor_prestaco = ValorPrestaco.new(params[:valor_prestaco])
