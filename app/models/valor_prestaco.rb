@@ -11,7 +11,7 @@ class ValorPrestaco < ActiveRecord::Base
   end
 
   def calcular_valor_presente
-    @valor_presente = valorfinanciado.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d / ((1 + taxajuros)** numeromeses)
+    @valor_presente = valorfinanciado.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d / ((1 + (taxajuros/100))** numeromeses)
   end
 
   def calcula_porcentagem

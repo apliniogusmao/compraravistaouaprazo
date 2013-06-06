@@ -19,11 +19,7 @@ class ValorPrestacosController < ApplicationController
     @valor_presente = @valor_prestaco.calcular_valor_presente
     @porcentagem = @valor_prestaco.calcula_porcentagem
 
-    if @valor_prestacao > @valor_presente
-      @apresentar_mensagem = true
-    else
-      @apresentar_mensagem = false
-    end
+     @apresentar_mensagem = true
 
     respond_to do |format|
       format.html { render action: "new" }
