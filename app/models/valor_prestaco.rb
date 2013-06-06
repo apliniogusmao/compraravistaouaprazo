@@ -15,7 +15,7 @@ class ValorPrestaco < ActiveRecord::Base
   end
 
   def calcula_porcentagem
-    porcentagem = 1 -((@valor_presente/valorfinanciado.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d) * 100)
+    porcentagem = 100 - ((@valor_presente/valorfinanciado.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d) * 100)
   end
 
 end
