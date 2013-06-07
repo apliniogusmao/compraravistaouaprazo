@@ -15,13 +15,16 @@ class QuantidadeDeMesesController < ApplicationController
   # POST /quantidade_de_meses.json
   def create
     @quantidade_de_mese = QuantidadeDeMese.new(params[:quantidade_de_mese])
-  
-    @quantidade_meses =   @quantidade_de_mese.calcular_qtade_meses
-    
+
+    @quantidade_meses = @quantidade_de_mese.calcular_qtade_meses
+    @valor_presente = @quantidade_de_mese.calcular_valor_presente_q
+    @porcentagem = @quantidade_de_mese.calcula_porcentagem_q
+
+    @apresentar_mensagem = true
+
     respond_to do |format|
-         format.html { render action: "new" }
-         format.json { render json: @quantidade_de_mese, status: :created, location: @quantidade_de_mese }
-       end
-      
+      format.html { render action: "new" }
+    end
+
   end
 end

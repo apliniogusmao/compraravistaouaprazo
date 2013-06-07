@@ -15,7 +15,7 @@ development:
   database: compraravistaouaprazo_development
   pool: 5
   username: root
-  password: alitech
+  password: alitech_1
   host: localhost
   socket: /var/run/mysqld/mysqld.sock
 
@@ -29,7 +29,7 @@ test:
   database: compraravistaouaprazo_test
   pool: 5
   username: root
-  password: alitech
+  password: alitech_1
   host: localhost
   socket: /var/run/mysqld/mysqld.sock
 
@@ -40,6 +40,6 @@ production:
   database: compraravistaouaprazo_production
   pool: 5
   username: root
-  password: alitech
+  password: alitech_1
   host: localhost
   socket: /var/run/mysqld/mysqld.sock

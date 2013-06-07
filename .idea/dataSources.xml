@@ -5,7 +5,7 @@
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/compraravistaouaprazo_test</jdbc-url>
       <user-name>root</user-name>
-      <user-password>dfcbdfc6dfc3dfdedfcfdfc9dfc2</user-password>
+      <user-password>dfcbdfc6dfc3dfdedfcfdfc9dfc2dff5df9b</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
@@ -35,7 +35,7 @@
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/compraravistaouaprazo_development</jdbc-url>
       <user-name>root</user-name>
-      <user-password>dfcbdfc6dfc3dfdedfcfdfc9dfc2</user-password>
+      <user-password>dfcbdfc6dfc3dfdedfcfdfc9dfc2dff5df9b</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
