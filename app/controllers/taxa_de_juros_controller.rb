@@ -16,12 +16,12 @@ class TaxaDeJurosController < ApplicationController
   def create
     @taxa_de_juro = TaxaDeJuro.new(params[:taxa_de_juro])
 
-    @valor_juros =  @taxa_de_juro.calcular_taxa_juros  
-      
+    @valor_juros = @taxa_de_juro.calcular_taxa_juros
+
     respond_to do |format|
-          format.html { render action: "new" }
-          format.json { render json: @taxa_de_juro, status: :created, location: @taxa_de_juro }
-     end 
+      format.html { render action: "new" }
+      format.json { render json: @taxa_de_juro, status: :created, location: @taxa_de_juro }
+    end
   end
 
 end
