@@ -19,7 +19,7 @@ class ValorPrestacosController < ApplicationController
     @valor_presente = @valor_prestaco.calcular_valor_presente
     @porcentagem = @valor_prestaco.calcula_porcentagem
 
-     @apresentar_mensagem = true
+    @apresentar_mensagem = true
 
     respond_to do |format|
       format.html { render action: "new" }

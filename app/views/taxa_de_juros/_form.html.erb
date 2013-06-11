@@ -12,13 +12,13 @@
 <div class="control-group">
 	<%= f.label  t('taxa_de_juro.new.valordofinanciamento'), :class => 'control-label' %>
 	<div class="controls">
-		<%= f.number_field :valordofinanciamento, :required => true, :step => '1', :min => '1', :title => t('mensagem.valordofinanciamento')   %>
+		<%= f.text_field :valordofinanciamento, :required => true,  :class => 'formato_moeda', :title => t('mensagem.valordofinanciamento')   %>
 	</div>
 </div>
 <div class="control-group">
 	<%= f.label  t('taxa_de_juro.new.valordaparcela'), :class => 'control-label' %>
 	<div class="controls">
-		<%= f.number_field :valordaparcela, :required => true, :step => '1', :min => '1', :title => t('mensagem.valorparcelas')   %>
+		<%= f.text_field :valordaparcela, :required => true, :class => 'formato_moeda', :title => t('mensagem.valorparcelas')   %>
 	</div>
 </div>
 <div class="control-group">

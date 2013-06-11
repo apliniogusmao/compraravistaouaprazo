@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20130521142915) do
   end
 
   create_table "taxa_de_juros", :force => true do |t|
-    t.decimal  "valordofinanciamento", :precision => 10, :scale => 2
-    t.string  "valordaparcela",       :precision => 10, :scale => 2
+    t.string  "valordofinanciamento"
+    t.string  "valordaparcela"
     t.integer  "quantidademeses"
     t.datetime "created_at",                                          :null => false
     t.datetime "updated_at",                                          :null => false
