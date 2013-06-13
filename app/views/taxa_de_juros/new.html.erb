@@ -8,6 +8,15 @@
 		<%= render 'form' %>
 	</div>
 	<div class="span6">
-		A taxa de juros é <%= number_to_currency(@valor_juros, :format => "%u %n", :separator => ",", :delimiter => ".", :precision => 6, :scale => 2, :unit => "") %>
+      <% if @valor_juros %>
+
+		<p>A taxa de juros correspondente é <%= converter_desconto @valor_juros %>%.</p>
+
+
+      <p class="notice">Então compesaria pagar a vista o valor de <%= converter_para_moeda(@valor_presente) %> cujo o desconto será de
+        <%= converter_desconto (@porcentagem) %> % sobre <%= @taxa_de_juro.valordofinanciamento %></p>
+
+       <% end %>
+
 	</div>
 </div>

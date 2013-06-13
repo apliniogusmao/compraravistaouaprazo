@@ -8,13 +8,15 @@
     <%= render 'form' %>
   </div>
   <div class="span6">
-    <% if @apresentar_mensagem %>
+    <% if @quantidade_meses %>
         <p>
-          O perido é <%= @quantidade_meses.to_i %>
+          A quantidade de prestações correpondentes é <%= @quantidade_meses.to_i %>.
         </p>
 
-        <p class="notice">Valor a vista menor que <%= converter_para_moeda(@valor_presente) %> vale a pena pagar à vista
-          ou solicitar um desconto de <%= converter_para_moeda(@porcentagem) %> %</p>
+
+        <p class="notice">Então compesaria pagar a vista o valor de <%= converter_para_moeda(@valor_presente) %> cujo o desconto será de
+          <%= converter_desconto (@porcentagem) %> % sobre <%= @quantidade_de_mese.valorfinanciado %></p>
+
     <% end %>
   </div>
 </div>

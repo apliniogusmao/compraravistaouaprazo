@@ -20,8 +20,6 @@ class ValorFinanciamentosController < ApplicationController
     @valor_presente = @valor_financiamento.calcular_valor_presente
     @porcentagem = @valor_financiamento.calcula_porcentagem
 
-    @apresentar_mensagem = true
-
     respond_to do |format|
       format.html { render action: "new" }
     end

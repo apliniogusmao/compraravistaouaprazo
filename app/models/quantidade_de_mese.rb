@@ -13,11 +13,11 @@ class QuantidadeDeMese < ActiveRecord::Base
   end
 
   def calcular_valor_presente_q
-    valor_presente = valorfinanciado.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d / ((1 + (jurosmensal/100))** @quantidade)
+    @valor_presente = valorfinanciado.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d / ((1 + (jurosmensal/100))** @quantidade)
   end
 
   def calcula_porcentagem_q
-    porcentagem = 100 - ((valorprestacao.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d/valorfinanciado.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d) * 100)
+    porcentagem = 100 - ((@valor_presente/valorfinanciado.gsub(/[R$]/, ' ').gsub(/[.]/, '_').to_d) * 100)
   end
 
 end

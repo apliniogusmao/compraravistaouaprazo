@@ -17,6 +17,8 @@ class TaxaDeJurosController < ApplicationController
     @taxa_de_juro = TaxaDeJuro.new(params[:taxa_de_juro])
 
     @valor_juros = @taxa_de_juro.calcular_taxa_juros
+    @valor_presente = @taxa_de_juro.calcular_valor_presente
+    @porcentagem = @taxa_de_juro.calcula_porcentagem
 
     respond_to do |format|
       format.html { render action: "new" }

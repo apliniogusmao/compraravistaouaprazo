@@ -8,13 +8,13 @@
     <%= render 'form' %>
   </div>
   <div class="span6">
-    <% if @apresentar_mensagem %>
+    <% if @valor_financiar %>
         <p>
-          O Valor da prestação é: <%= converter_para_moeda @valor_financiar %>
+          O total do financimento correponderia ao Valor <%= converter_para_moeda @valor_financiar %>
         </p>
 
-        <p class="notice">Valor a vista menor que <%= converter_para_moeda(@valor_presente) %> vale a pena pagar à vista
-          ou solicitar um desconto de <%= converter_para_moeda(@porcentagem) %> %</p>
-    <% end %>
+        <p class="notice">Compesaria pagar a vista o valor de <%= converter_para_moeda(@valor_presente) %> cujo o desconto será de
+          <%= converter_desconto @porcentagem %> % sobre <%= converter_para_moeda @valor_financiar %></p>
+       <% end %>
   </div>
 </div>
